@@ -8,12 +8,12 @@
 #include <cstdint>
 #include <limits>
 
-namespace Random
+namespace Aether::Random
 {
 
 /*
-		Xorshift64* pseudo random generator
-	*/
+    Xorshift64* pseudo random generator
+  */
 template <uint_fast8_t a, uint_fast8_t b, uint_fast8_t c, auto mult>
 class Xorshift64sEngine
 {
@@ -51,13 +51,13 @@ private:
 using Xorshift64s = Xorshift64sEngine<12, 25, 27, 0x2545F4914F6CDD1Du>;
 
 /*
-		Fills the container with random values in the range [0.f, 1.f]
-		generated from the seed 'seed'
+    Fills the container with random values in the range [0.f, 1.f]
+    generated from the seed 'seed'
 
-		Note: because the function is interpolating between two uniform ranges,
-		the output distribution will be more peak like at crossmix=0.5 and
-		uniform at crossmix=0 and 1.
-	*/
+    Note: because the function is interpolating between two uniform ranges,
+    the output distribution will be more peak like at crossmix=0.5 and
+    uniform at crossmix=0 and 1.
+  */
 template <class Container>
 void generate(Container& container, uint32_t seed, float cross_seed) noexcept
 {

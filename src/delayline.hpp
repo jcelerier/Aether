@@ -12,6 +12,8 @@
 #include <cstdint>
 #include <random>
 
+namespace Aether
+{
 class Delayline
 {
 public:
@@ -318,5 +320,5 @@ private:
     }
   }
 };
-
+}
 #endif

@@ -1,7 +1,7 @@
 #ifndef CONSTANTS_HPP
 #define CONSTANTS_HPP
 
-namespace constants
+namespace Aether::constants
 {
 template <typename T>
 inline constexpr T sqrt2_v = T(1.414213562373095048801688724209698079l);

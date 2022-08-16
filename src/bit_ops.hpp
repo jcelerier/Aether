@@ -26,8 +26,8 @@ constexpr T bit_ceil(T x)
 }
 #else
 /*
-		from http://www.graphics.stanford.edu/~seander/bithacks.html
-	*/
+    from http://www.graphics.stanford.edu/~seander/bithacks.html
+  */
 template <class T>
 constexpr bool has_single_bit(T x)
 {

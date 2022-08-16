@@ -1,6 +1,8 @@
 #ifndef PARAMETERS_HPP
 #define PARAMETERS_HPP
 
+namespace Aether
+{
 struct ParameterInfo
 {
   float min;
@@ -77,5 +79,5 @@ static constexpr ParameterInfo parameter_infos[] = {
     {-12, 12, -12, false}, // Distortion
     {-12, 12, -12, false}  // 52
 };
-
+}
 #endif

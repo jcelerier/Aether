@@ -7,6 +7,8 @@
 
 #include <tuple>
 
+namespace Aether
+{
 // First Order Filters
 
 /*
@@ -212,5 +214,5 @@ template <class FpType>
 using Lowshelf = Biquad<LowshelfGenerator, FpType>;
 template <class FpType>
 using Highshelf = Biquad<HighshelfGenerator, FpType>;
-
+}
 #endif

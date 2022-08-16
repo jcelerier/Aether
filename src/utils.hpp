@@ -2,6 +2,8 @@
 #include <cstddef>
 #include <string_view>
 
+namespace Aether
+{
 // concatenate multiple string views
 template <const std::string_view&... strings>
 struct join
@@ -26,3 +28,4 @@ struct join
 
 template <const std::string_view&... strings>
 static constexpr auto join_v = join<strings...>::value;
+}

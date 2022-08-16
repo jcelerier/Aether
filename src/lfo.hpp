@@ -5,6 +5,8 @@
 
 #include <complex>
 
+namespace Aether
+{
 class LFO
 {
   static constexpr double pi = constants::pi;
@@ -31,5 +33,5 @@ private:
   std::complex<double> m_step = 1.0;
   std::complex<double> m_phase = 1.0;
 };
-
+}
 #endif

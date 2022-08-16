@@ -4,6 +4,8 @@
 #include <algorithm>
 #include <cstddef>
 
+namespace Aether
+{
 template <class T>
 struct Ringbuffer
 {
@@ -58,14 +60,15 @@ struct Ringbuffer
   size_t size;
   T* buf;
 };
-
+}
 namespace std
 {
 template <class T>
-inline void swap(Ringbuffer<T>& lhs, Ringbuffer<T>& rhs) noexcept
+inline void swap(Aether::Ringbuffer<T>& lhs, Aether::Ringbuffer<T>& rhs) noexcept
 {
   lhs.swap(rhs);
 }
 }
+
 
 #endif

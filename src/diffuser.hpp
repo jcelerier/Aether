@@ -16,6 +16,8 @@
 #include <random>
 #include <utility>
 
+namespace Aether
+{
 /*
     Schroeder Allpass filter
 */
@@ -295,6 +297,7 @@ inline void AllpassDiffuser<FpType>::generate_mod_rate() noexcept
     m_filters[filter].set_mod_rate(
         m_mod_rate * (0.85f + 0.3f * m_rand_vals[2 * max_stages + filter]));
   }
+}
 }
 
 #endif

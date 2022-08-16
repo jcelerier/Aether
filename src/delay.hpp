@@ -13,6 +13,8 @@
 #include <cstdint>
 #include <numeric>
 
+namespace Aether
+{
 /*
     A basic tap delay
 */
@@ -215,5 +217,5 @@ inline void MultitapDelay::generate_tap_gains() noexcept
     m_tap_gain[tap] = gain * m_rand_vals[max_taps + tap];
   }
 }
-
+}
 #endif

@@ -7,7 +7,7 @@
 #include <version>
 #endif
 
-namespace math
+namespace Aether::math
 {
 #if __cpp_lib_interpolate >= 201902L
 template <class T>

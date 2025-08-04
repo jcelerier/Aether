@@ -174,7 +174,7 @@ class Object
 public:
   halp_meta(name, "Aether")
   halp_meta(c_name, "aether_reverb")
-  halp_meta(category, "Audio/Effects")
+  halp_meta(category, "Audio/Effects/Reverb")
   halp_meta(description, "An algorithmic reverb based on Cloudseed.")
   halp_meta(uuid, "3ed27d12-ca4e-4d23-a1b6-198cef6ba198")
   halp_meta(author, "Dougal-s, ValdemarOrn")
